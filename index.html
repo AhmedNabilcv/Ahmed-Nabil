@@ -3,123 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="hZTG0dnTIWi1z019soxKtmMzmkjQw9Gms-aPHrAHSAc" />
-    <title>Ahmed Nabil Youssef | Construction and Building Engineer</title>
+    <title>Ahmed Nabil Youssef | Engineering Profile</title>
     <style>
-        * { box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; color: #333; margin: 0; padding: 10px; background-color: #f4f4f9; overflow-x: hidden; }
-        .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); word-wrap: break-word; }
+        :root { --dark: #121212; --light: #ffffff; --grey: #f4f4f4; --accent: #3498db; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--grey); margin: 0; padding: 40px 20px; color: var(--dark); }
+        .wrapper { max-width: 900px; margin: auto; }
+        
+        .header-card { background: var(--dark); color: var(--light); padding: 40px; border-radius: 20px; display: flex; align-items: center; gap: 30px; margin-bottom: 20px; }
+        .profile-img { width: 120px; height: 120px; border-radius: 20px; object-fit: cover; border: 2px solid #333; }
+        .info h1 { margin: 0; font-size: 1.8em; letter-spacing: -1px; }
+        .info p { margin: 5px 0 0 0; opacity: 0.8; font-size: 0.9em; }
 
-        /* Profile Picture Styling */
-        .profile-pic { width: 150px; height: 150px; margin: 0 auto 15px auto; border-radius: 50%; object-fit: cover; display: block; border: 3px solid #2c3e50; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--light); padding: 30px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .card h2 { font-size: 0.7em; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .item { margin-bottom: 15px; }
+        .item h3 { margin: 0; font-size: 0.95em; }
+        .item p { margin: 2px 0; font-size: 0.85em; color: #666; }
+        
+        .phone-dir { display: inline-block; direction: ltr; unicode-bidi: embed; }
 
-        /* The Button Hack */
         #lang-toggle { display: none; }
-        .btn-label { 
-            display: block; width: 100%; max-width: 300px; margin: 0 auto 20px auto;
-            padding: 15px; background: #2c3e50; color: white; text-align: center;
-            border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 18px;
-        }
+        .btn-label { display: block; width: fit-content; margin-bottom: 20px; padding: 10px 20px; background: #ddd; border-radius: 50px; cursor: pointer; font-size: 12px; font-weight: 700; }
 
-        /* Toggle Logic */
         .ar-content { display: none; }
         #lang-toggle:checked ~ .en-content { display: none; }
         #lang-toggle:checked ~ .ar-content { display: block; text-align: right; direction: rtl; }
-        #lang-toggle:checked ~ .ar-content ul { padding-left: 0; padding-right: 20px; }
-
-        header { text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 15px; }
-        h1 { margin: 0; font-size: 1.3em; color: #2c3e50; }
-        h2 { border-bottom: 1px solid #ccc; margin-top: 20px; color: #2c3e50; font-size: 1.1em; padding-bottom: 5px; }
-        .contact { font-size: 0.85em; margin-top: 10px; color: #555; }
-        .section { margin-bottom: 15px; }
-        ul { padding-left: 18px; margin: 8px 0; }
-        li { margin-bottom: 5px; font-size: 0.95em; }
-        p { font-size: 0.95em; }
-
-        @media (min-width: 600px) {
-            body { padding: 40px; }
-            .container { padding: 40px; }
-        }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="wrapper">
     <input type="checkbox" id="lang-toggle">
-    <label for="lang-toggle" class="btn-label">العربية / English</label>
+    <label for="lang-toggle" class="btn-label">English / العربية</label>
 
-    <!-- English Content -->
     <div class="en-content">
-        <header>
-            <img src="logo.png" alt="Ahmed Nabil Youssef" class="profile-pic">
-            <h1>AHMED NABIL YOUSSEF</h1>
-            <div class="contact">Alexandria, Egypt | +201021076604 | mypc1239@outlook.com<br>Syndicate Reg: 16/0216128/2025/3</div>
-        </header>
-        <section class="section">
-            <h2>PROFESSIONAL SUMMARY</h2>
-            <p>Qualified and professionally recognized Construction and Building Engineer holding a globally accredited, 5-year Bachelor's degree in Construction and Building Engineering. Demonstrates a profound academic and practical foundation across structural design, geotechnical mechanics, hydraulics infrastructure, and robust project management methodologies. Formally validated at an international standard with certified degree comparability to a Danish Bachelor of Engineering, and admitted as a Graduate Member of the Institution of Civil Engineers (ICE), UK. Equipped with excellent technical capabilities and code-compliant execution metrics to contribute effectively to premier engineering technical office teams.</p>
-        </section>
-        <section class="section">
-            <h2>PROFESSIONAL MEMBERSHIPS & CREDENTIALS</h2>
-            <p><strong>Institution of Civil Engineers (ICE), United Kingdom</strong><br>Graduate Member (GMICE) | Membership Number: 093981338 | Admitted October 2025</p>
-            <ul>
-                <li>Academic baseline officially evaluated and verified as meeting full educational requirements for standard progression pathways toward Chartered Engineer (CEng) registration.</li>
-                <li>Recognized both nationally and internationally under the premier post-nominal credential GMICE.</li>
-            </ul>
-            <p><strong>Egyptian Syndicate of Engineers</strong><br>Alexandria Branch | Registered Engineer | Licensed 2025<br>Licensed member registered under official registration number: 16/0216128/2025/3.</p>
-        </section>
-        <section class="section">
-            <h2>EDUCATION</h2>
-            <p><strong>Arab Academy for Science, Technology & Maritime Transport (AASTMT)</strong><br>B.Sc. in Construction and Building Engineering (5-Year Program) | Graduated January 2025</p>
-            <ul>
-                <li>Accreditation: Fully accredited by the Engineering Accreditation Commission (EAC) of ABET.</li>
-                <li>Global Equivalence: Formally certified by the Danish Agency for Higher Education and Science as fully comparable in level to a Danish Bachelor of Engineering in Civil Engineering.</li>
-                <li>Practical Milestones: Successfully completed a rigorous Capstone Senior Design Project sequence (Senior Project I & II) focused on Geotechnical Engineering.</li>
-            </ul>
-            <p><strong>Alexandria Private Language School (ASA)</strong><br>High School Diploma (American Division) | Graduated June 2019</p>
-            <ul>
-                <li>Accreditation: Cognia / AdvancED (NCA CASI, NWAC, and SACS CASI).</li>
-                <li>SAT General Score: 1280 / 1600 | Highly distinguished performance on SAT Math: 770 / 800.</li>
-                <li>College Board SAT Subject Tests: Math Level 1: 680 / 800 | Physics: 680 / 800.</li>
-            </ul>
-        </section>
+        <div class="header-card">
+            <img src="logo.png" alt="Profile" class="profile-img">
+            <div class="info">
+                <h1>AHMED NABIL YOUSSEF</h1>
+                <p>Construction & Building Engineer | Alexandria, Egypt</p>
+                <p>mypc1239@outlook.com | +20 102 107 6604</p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="card">
+                <h2>Technical Credentials</h2>
+                <div class="item"><h3>Institution of Civil Engineers (UK)</h3><p>Graduate Member (GMICE) | Admitted 2025</p></div>
+                <div class="item"><h3>Egyptian Syndicate of Engineers</h3><p>Registered Engineer | Alexandria Branch</p></div>
+            </div>
+            <div class="card">
+                <h2>Software Proficiencies</h2>
+                <div class="item"><h3>Structural Analysis</h3><p>Autodesk Robot Structural Analysis</p></div>
+                <div class="item"><h3>BIM</h3><p>Revit Structure</p></div>
+                <div class="item"><h3>Drafting</h3><p>AutoCAD</p></div>
+                <div class="item"><h3>Project Management</h3><p>Oracle Primavera P6</p></div>
+            </div>
+            <div class="card">
+                <h2>Education</h2>
+                <div class="item"><h3>B.Sc. Construction & Building Engineering</h3><p>AASTMT | 5-Year Degree Program</p></div>
+                <div class="item"><h3>American High School Diploma</h3><p>Alexandria Private Language School</p></div>
+            </div>
+        </div>
     </div>
 
-    <!-- Arabic Content -->
     <div class="ar-content">
-        <header>
-            <img src="logo.png" alt="أحمد نبيل يوسف" class="profile-pic">
-            <h1>أحمد نبيل يوسف</h1>
-            <div class="contact">الإسكندرية، مصر | 201021076604+ | mypc1239@outlook.com<br>رقم تسجيل النقابة: 16/0216128/2025/3</div>
-        </header>
-        <section class="section">
-            <h2>الملخص المهني</h2>
-            <p>مهندس تشييد وبناء مؤهل ومعتمد مهنيًا، حاصل على درجة البكالوريوس في هندسة التشييد والبناء (برنامج 5 سنوات). أمتلك أساسًا أكاديميًا وعمليًا متينًا في التصميم الإنشائي، وميكانيكا التربة، وبنية البنية التحتية الهيدروليكية، ومنهجيات إدارة المشاريع القوية. تم اعتماد درجتي العلمية دوليًا لتكون معادلة لبكالوريوس الهندسة المدنية في الدنمارك، وأنا عضو خريج في مؤسسة المهندسين المدنيين (ICE) بالمملكة المتحدة. أتمتع بقدرات تقنية متميزة وخبرة في تنفيذ المشاريع وفقًا للأكواد العالمية، وأسعى للمساهمة بفعالية في فرق المكاتب الفنية الهندسية الكبرى.</p>
-        </section>
-        <section class="section">
-            <h2>العضويات المهنية والاعتمادات</h2>
-            <p><strong>مؤسسة المهندسين المدنيين (ICE)، المملكة المتحدة</strong><br>عضو خريج (GMICE) | رقم العضوية: 093981338 | معتمد منذ أكتوبر 2025</p>
-            <ul>
-                <li>تم تقييم الأساس الأكاديمي رسميًا والتحقق من استيفائه لكافة المتطلبات التعليمية للمسارات القياسية نحو التسجيل كمهندس معتمد (CEng).</li>
-                <li>عضو معترف به وطنياً ودولياً تحت المسمى المهني المتميز (GMICE).</li>
-            </ul>
-            <p><strong>نقابة المهندسين المصرية</strong><br>فرع الإسكندرية | مهندس مسجل | مرخص لعام 2025<br>عضو مرخص مسجل تحت رقم: 16/0216128/2025/3.</p>
-        </section>
-        <section class="section">
-            <h2>التعليم</h2>
-            <p><strong>الأكاديمية العربية للعلوم والتكنولوجيا والنقل البحري (AASTMT)</strong><br>بكالوريوس هندسة التشييد والبناء (برنامج 5 سنوات) | التخرج: يناير 2025</p>
-            <ul>
-                <li>الاعتماد: معتمد بالكامل من قبل لجنة اعتماد الهندسة (EAC) التابعة لـ ABET.</li>
-                <li>المعادلة الدولية: شهادة رسمية من الوكالة الدنماركية للتعليم العالي والعلوم بمعادلة الشهادة بالكامل لدرجة بكالوريوس الهندسة في الهندسة المدنية في الدنمارك.</li>
-                <li>الإنجازات العملية: إتمام بنجاح لمشروع التخرج (Senior Project I & II) بتركيز على هندسة الجيوتقنية (ميكانيكا التربة).</li>
-            </ul>
-            <p><strong>مدرسة الإسكندرية الخاصة للغات (ASA)</strong><br>شهادة الثانوية العامة (القسم الأمريكي) | التخرج: يونيو 2019</p>
-            <ul>
-                <li>الاعتماد: Cognia / AdvancED (NCA CASI, NWAC, and SACS CASI).</li>
-                <li>النتيجة العامة لـ SAT: 1280 / 1600 | أداء متميز في اختبار SAT للرياضيات: 770 / 800.</li>
-                <li>اختبارات SAT للمواد: الرياضيات مستوى 1: 680 / 800 | الفيزياء: 680 / 800.</li>
-            </ul>
-        </section>
+        <div class="header-card">
+            <img src="logo.png" alt="Profile" class="profile-img">
+            <div class="info">
+                <h1>أحمد نبيل يوسف</h1>
+                <p>مهندس تشييد وبناء | الإسكندرية، مصر</p>
+                <p>mypc1239@outlook.com | <span class="phone-dir">+20 102 107 6604</span></p>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="card">
+                <h2>الاعتمادات الفنية</h2>
+                <div class="item"><h3>مؤسسة المهندسين المدنيين (ICE)</h3><p>عضو خريج (GMICE) | معتمد 2025</p></div>
+                <div class="item"><h3>نقابة المهندسين المصرية</h3><p>مهندس مسجل | فرع الإسكندرية</p></div>
+            </div>
+            <div class="card">
+                <h2>المهارات البرمجية</h2>
+                <div class="item"><h3>التحليل الإنشائي</h3><p>Autodesk Robot Structural Analysis</p></div>
+                <div class="item"><h3>نمذجة معلومات البناء (BIM)</h3><p>Revit Structure</p></div>
+                <div class="item"><h3>الرسم الهندسي</h3><p>AutoCAD</p></div>
+                <div class="item"><h3>إدارة المشاريع</h3><p>Oracle Primavera P6</p></div>
+            </div>
+            <div class="card">
+                <h2>التعليم</h2>
+                <div class="item"><h3>بكالوريوس هندسة التشييد والبناء</h3><p>الأكاديمية العربية (AASTMT)</p></div>
+                <div class="item"><h3>دبلومة أمريكية</h3><p>مدرسة الإسكندرية الخاصة للغات</p></div>
+            </div>
+        </div>
     </div>
 </div>
 
